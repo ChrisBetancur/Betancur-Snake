@@ -58,12 +58,12 @@ public class Game {
 
         System.out.println(temp);*/
 
-        Test test = new Test();
+        //Test test = new Test();
         /**
          * When you initialize a object you use the 'new' keyword
          */
         
-        System.out.println(test.getA());
+        //System.out.println(test.getA());
 
     }
 }
