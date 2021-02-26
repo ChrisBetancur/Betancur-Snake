@@ -24,6 +24,10 @@ public class Snake {
         this.snakeSize = snakeSize;
     }
 
+    public void addToSnake(){
+
+    }
+
     public ArrayList<Tile> getCurrentTiles() {
         return currentTiles;
     }

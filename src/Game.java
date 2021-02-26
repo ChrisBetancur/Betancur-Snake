@@ -1,5 +1,16 @@
 
+class Test{
+    private String a="Hello";
+    public Test(){
 
+    }
+    public String getA(){
+        return a;
+    }
+    public void setA(String a){
+        this.a=a;
+    }
+}
 public class Game {
     public static void main(String[] args){
 
@@ -41,6 +52,18 @@ public class Game {
             System.out.println();
         }*/
 
+        /*Test test = new Test();
+        test.setA("Bye");
+        String temp=test.getA();
+
+        System.out.println(temp);*/
+
+        Test test = new Test();
+        /**
+         * When you initialize a object you use the 'new' keyword
+         */
+        
+        System.out.println(test.getA());
 
     }
 }
