@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c06e59c3-a6b8-4405-a43c-1f8ebfb85242" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
+    <list default="true" id="c06e59c3-a6b8-4405-a43c-1f8ebfb85242" name="Default Changelist" comment="Test Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Properties/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Properties/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Properties/Snake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Properties/Snake.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Properties/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Properties/Tile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,10 +30,24 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="SDK Location" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.notifications" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Game" />
+      <module name="SnakeGame" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Game" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -46,6 +58,14 @@
       <option name="presentableId" value="Default" />
       <updated>1613861505307</updated>
     </task>
+    <task id="LOCAL-00001" summary="Test Update">
+      <created>1614371898801</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1614371898801</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -59,6 +79,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Test Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test Update" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
