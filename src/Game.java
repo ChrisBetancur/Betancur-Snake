@@ -1,3 +1,4 @@
+import Properties.Board;
 
 class Test{
     private String a="Hello";
@@ -65,5 +66,8 @@ public class Game {
         
         //System.out.println(test.getA());
 
+
+        Board board = new Board();
+        board.printBoard();
     }
 }

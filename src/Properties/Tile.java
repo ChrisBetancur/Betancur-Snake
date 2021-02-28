@@ -50,4 +50,26 @@ public class Tile {
     public void setCol(int col) {
         this.col = col;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Tile tile = (Tile) o;
+
+        if (isContainsSnake != tile.isContainsSnake) return false;
+        if (isContainsFood != tile.isContainsFood) return false;
+        if (row != tile.row) return false;
+        return col == tile.col;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = (isContainsSnake ? 1 : 0);
+        result = 31 * result + (isContainsFood ? 1 : 0);
+        result = 31 * result + row;
+        result = 31 * result + col;
+        return result;
+    }
 }

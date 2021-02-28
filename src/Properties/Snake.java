@@ -9,6 +9,8 @@ import java.util.ArrayList;
 public class Snake {
 
     private int snakeSize;
+    private Tile head;
+    private Tile tail;
     private ArrayList<Tile> currentTiles;
 
     public Snake(int snakeSize) {
@@ -34,5 +36,23 @@ public class Snake {
 
     public void setCurrentTiles(ArrayList<Tile> currentTiles) {
         this.currentTiles = currentTiles;
+        head=currentTiles.get(currentTiles.size()-1);
+        tail=currentTiles.get(0);
+    }
+
+    public Tile getHead() {
+        return head;
+    }
+
+    public void setHead(Tile head) {
+        this.head = head;
+    }
+
+    public Tile getTail() {
+        return tail;
+    }
+
+    public void setTail(Tile tail) {
+        this.tail = tail;
     }
 }
