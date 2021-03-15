@@ -1,23 +1,20 @@
+import Engine.Window;
+import GameUtil.Movement;
 import Properties.Board;
+import Properties.Tile;
 
-class Test{
-    private String a="Hello";
-    public Test(){
-
-    }
-    public String getA(){
-        return a;
-    }
-    public void setA(String a){
-        this.a=a;
-    }
-}
-public class Game {
+import static Properties.Direction.*;
+/**
+ * Game --- The class where the game is run at
+ * @author Chris Betancur
+ * @author David Alvarez Tamayo
+ */
+public class Main {
     public static void main(String[] args){
 
-        int[][][] arr = new int[3][][];
+        /*int[][][] arr = new int[3][][];
 
-        int[] arr1 = new int[3];
+        int[] arr1 = new int[3];*/
 
         /**
          * {1,4,3,2,4,2,4,5} 1-D array
@@ -67,7 +64,20 @@ public class Game {
         //System.out.println(test.getA());
 
 
-        Board board = new Board();
-        board.printBoard();
+        //Board board = new Board();
+        //board.printBoard();
+        //Movement movement = new Movement(board);
+        //movement.simulateSnake();
+        /*movement.setDirection(LEFT);
+        movement.moveSnake();
+        movement.moveSnake();
+        movement.moveSnake();
+        movement.moveSnake();
+        movement.setDirection(DOWN);
+        movement.moveSnake();
+        movement.moveSnake();*/
+
+        Window window = new Window(new Board());
+
     }
 }

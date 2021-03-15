@@ -1,15 +1,13 @@
 package Properties;
 
-import java.awt.*;
 import java.util.ArrayList;
-import java.util.Random;
+import java.util.LinkedList;
 
-import static Properties.Directions.UP;
+import static Properties.Direction.DOWN;
+import static Properties.Direction.UP;
 
 /**
  * Board --- Creates the board which contains all properties related to the board
- * @author Chris Betancur
- * @author David Alvarez Tamayo
  */
 
 public class Board {
@@ -18,7 +16,7 @@ public class Board {
     private Snake snake;
 
     private final int DEFAULT_SNAKE_SIZE=5;
-    private Directions snakeDirection=UP;
+    private final Direction defaultSnakeDirection = DOWN;
     private ArrayList<Tile> snakeStartingPosition;
 
     private int foodRow;
@@ -57,12 +55,13 @@ public class Board {
 
     private void initSnake(){
         if(snake!=null){
-            ArrayList<Tile> snakeStartingPosition = new ArrayList<>();
-            snakeStartingPosition.add(new Tile(true,false,0,7));
-            snakeStartingPosition.add(new Tile(true,false,1,7));
-            snakeStartingPosition.add(new Tile(true,false,2,7));
-            snakeStartingPosition.add(new Tile(true,false,3,7));
+            LinkedList<Tile> snakeStartingPosition = new LinkedList<>();
+
             snakeStartingPosition.add(new Tile(true,false,4,7));
+            snakeStartingPosition.add(new Tile(true,false,3,7));
+            snakeStartingPosition.add(new Tile(true,false,2,7));
+            snakeStartingPosition.add(new Tile(true,false,1,7));
+            snakeStartingPosition.add(new Tile(true,false,0,7));
 
             snake.setCurrentTiles(snakeStartingPosition);
         }
@@ -71,8 +70,8 @@ public class Board {
     private void generateFood(){
         for(int i = 0;i<NUM_OF_TILES;i++) {
 
-            int randomCol = (int) (Math.random() * (BOARD_COLUMNS + 2));
-            int randomRow = (int) (Math.random() * (BOARD_ROWS + 2));
+            int randomCol = (int) (Math.random() * (BOARD_COLUMNS));
+            int randomRow = (int) (Math.random() * (BOARD_ROWS));
 
             if(!gameBoard[randomRow][randomCol].isContainsSnake()){
                 gameBoard[randomRow][randomCol].setContainsFood(true);
@@ -105,6 +104,7 @@ public class Board {
             }
             System.out.println();
         }
+        System.out.println();
     }
 
     public Tile[][] getGameBoard() {
@@ -125,5 +125,45 @@ public class Board {
 
     public int getDEFAULT_SNAKE_SIZE() {
         return DEFAULT_SNAKE_SIZE;
+    }
+
+    public Direction getDefaultSnakeDirection() {
+        return defaultSnakeDirection;
+    }
+
+    public ArrayList<Tile> getSnakeStartingPosition() {
+        return snakeStartingPosition;
+    }
+
+    public void setSnakeStartingPosition(ArrayList<Tile> snakeStartingPosition) {
+        this.snakeStartingPosition = snakeStartingPosition;
+    }
+
+    public int getFoodRow() {
+        return foodRow;
+    }
+
+    public void setFoodRow(int foodRow) {
+        this.foodRow = foodRow;
+    }
+
+    public int getFoodCol() {
+        return foodCol;
+    }
+
+    public void setFoodCol(int foodCol) {
+        this.foodCol = foodCol;
+    }
+
+    public int getBOARD_ROWS() {
+        return BOARD_ROWS;
+    }
+
+    public int getBOARD_COLUMNS() {
+        return BOARD_COLUMNS;
+    }
+
+    public int getNUM_OF_TILES() {
+        return NUM_OF_TILES;
     }
 }

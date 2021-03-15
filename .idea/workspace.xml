@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c06e59c3-a6b8-4405-a43c-1f8ebfb85242" name="Default Changelist" comment="Update 1">
+    <list default="true" id="c06e59c3-a6b8-4405-a43c-1f8ebfb85242" name="Default Changelist" comment="Update 2&#10;&#10;-Completion of the Board.class with all of the necessary properties and methods&#10;&#10;-Next steps will be to properly comment what we&#10; have as well as work on the movement of the snake">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Engine/BoardPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Engine/TilePanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Engine/Window.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GameUtil/Movement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SnakeGame/Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SnakeGame/Properties/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SnakeGame/Properties/Board.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SnakeGame/Properties/Directions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SnakeGame/Properties/Snake.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SnakeGame/Properties/Snake.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SnakeGame/Properties/Tile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SnakeGame/Properties/Tile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SnakeGame/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Properties/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Properties/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Properties/Directions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Properties/Direction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Properties/Snake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Properties/Snake.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Properties/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Properties/Tile.java" afterDir="false" />
     </list>
@@ -16,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -32,15 +44,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ChessGame" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RunManager">
-    <configuration name="Game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Game" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="SnakeGame" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -48,7 +61,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Game" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -89,7 +102,21 @@
       <option name="project" value="LOCAL" />
       <updated>1614379075724</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Update 2&#10;&#10;-Completion of the Board.class with all of the necessary properties and methods&#10;&#10;-Next steps will be to properly comment what we&#10; have as well as work on the movement of the snake">
+      <created>1614537525746</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1614537525746</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Update 2&#10;&#10;-Completion of the Board.class with all of the necessary properties and methods&#10;&#10;-Next steps will be to properly comment what we&#10; have as well as work on the movement of the snake">
+      <created>1614537588309</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1614537588309</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -108,7 +135,8 @@
     <MESSAGE value="Test Update" />
     <MESSAGE value="Multi-Dimensional Arrays" />
     <MESSAGE value="Update 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 1" />
+    <MESSAGE value="Update 2&#10;&#10;-Completion of the Board.class with all of the necessary properties and methods&#10;&#10;-Next steps will be to properly comment what we&#10; have as well as work on the movement of the snake" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 2&#10;&#10;-Completion of the Board.class with all of the necessary properties and methods&#10;&#10;-Next steps will be to properly comment what we&#10; have as well as work on the movement of the snake" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

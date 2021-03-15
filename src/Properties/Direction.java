@@ -1,6 +1,6 @@
 package Properties;
 
-public enum Directions {
+public enum Direction {
     UP,
     DOWN,
     RIGHT,

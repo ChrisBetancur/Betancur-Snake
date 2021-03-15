@@ -1,5 +1,8 @@
 package Properties;
 
+/**
+ * Tile --- Creates the the individual tile tha the board is made up of
+ */
 public class Tile {
 
     private boolean isContainsSnake;

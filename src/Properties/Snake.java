@@ -1,6 +1,7 @@
 package Properties;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 /**
  * Snake --- Create Snake which contains all properties relating to Snake
@@ -9,13 +10,14 @@ import java.util.ArrayList;
 public class Snake {
 
     private int snakeSize;
+    private int speed;
     private Tile head;
     private Tile tail;
-    private ArrayList<Tile> currentTiles;
+    private LinkedList<Tile> currentTiles;
 
     public Snake(int snakeSize) {
         this.snakeSize = snakeSize;
-        this.currentTiles = new ArrayList<>();
+        this.currentTiles = new LinkedList<>();
     }
 
     public int getSnakeSize() {
@@ -30,14 +32,23 @@ public class Snake {
 
     }
 
-    public ArrayList<Tile> getCurrentTiles() {
+    public LinkedList<Tile> getCurrentTiles() {
         return currentTiles;
     }
 
-    public void setCurrentTiles(ArrayList<Tile> currentTiles) {
+    public void setCurrentTiles(LinkedList<Tile> currentTiles) {
         this.currentTiles = currentTiles;
-        head=currentTiles.get(currentTiles.size()-1);
-        tail=currentTiles.get(0);
+        head=currentTiles.getFirst();
+        tail=currentTiles.getLast();
+        System.out.println(head.getRow());
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
     }
 
     public Tile getHead() {
