@@ -90,6 +90,7 @@ public class Movement {
     }
 
     private boolean isSnakeOnFood() {
+        //
         return false;
     }
 
