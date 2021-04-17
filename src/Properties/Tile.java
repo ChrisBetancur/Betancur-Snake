@@ -75,4 +75,12 @@ public class Tile {
         result = 31 * result + col;
         return result;
     }
+
+    @Override
+    public String toString() {
+        return "Tile{" +
+                "row=" + row +
+                ", col=" + col +
+                '}';
+    }
 }

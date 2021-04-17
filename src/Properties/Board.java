@@ -16,15 +16,18 @@ public class Board {
     private Snake snake;
 
     private final int DEFAULT_SNAKE_SIZE=5;
+
     private final Direction defaultSnakeDirection = DOWN;
     private ArrayList<Tile> snakeStartingPosition;
 
     private int foodRow;
     private int foodCol;
 
-    private final int BOARD_ROWS=16;
-    private final int BOARD_COLUMNS=16;
-    private final int NUM_OF_TILES=256;
+    private final int BOARD_ROWS=20;
+    private final int BOARD_COLUMNS=20;
+    private final int NUM_OF_TILES=BOARD_ROWS*BOARD_COLUMNS;
+
+    private final int DEFAULT_SNAKE_COLUMNS = BOARD_COLUMNS/2 - 1;
 
 
     public Board() {
@@ -57,27 +60,30 @@ public class Board {
         if(snake!=null){
             LinkedList<Tile> snakeStartingPosition = new LinkedList<>();
 
-            snakeStartingPosition.add(new Tile(true,false,4,7));
-            snakeStartingPosition.add(new Tile(true,false,3,7));
-            snakeStartingPosition.add(new Tile(true,false,2,7));
-            snakeStartingPosition.add(new Tile(true,false,1,7));
-            snakeStartingPosition.add(new Tile(true,false,0,7));
+            int startingRow = DEFAULT_SNAKE_SIZE - 1;
+            for(int i = 0; i < DEFAULT_SNAKE_SIZE; i ++) {
+                snakeStartingPosition.add(new Tile(true,false,startingRow,DEFAULT_SNAKE_COLUMNS));
+                startingRow--;
+                System.out.println(startingRow);
+            }
 
             snake.setCurrentTiles(snakeStartingPosition);
         }
     }
 
-    private void generateFood(){
+    public void generateFood(){
         for(int i = 0;i<NUM_OF_TILES;i++) {
 
             int randomCol = (int) (Math.random() * (BOARD_COLUMNS));
             int randomRow = (int) (Math.random() * (BOARD_ROWS));
 
             if(!gameBoard[randomRow][randomCol].isContainsSnake()){
+                gameBoard[foodRow][foodCol].setContainsFood(false);
                 gameBoard[randomRow][randomCol].setContainsFood(true);
                 foodRow = randomRow;
                 foodCol = randomCol;
-                System.out.println("Food: "+randomRow+" "+randomCol);
+                printBoard();
+                //System.out.println("Food: "+randomRow+" "+randomCol);
                 break;
             }
         }

@@ -1,9 +1,8 @@
-import Engine.Window;
-import GameUtil.Movement;
-import Properties.Board;
-import Properties.Tile;
+import Engine.GameEngine;
+import UserInterface.MainMenuWindow;
 
-import static Properties.Direction.*;
+import static javafx.application.Application.launch;
+
 /**
  * Game --- The class where the game is run at
  * @author Chris Betancur
@@ -77,7 +76,15 @@ public class Main {
         movement.moveSnake();
         movement.moveSnake();*/
 
-        Window window = new Window(new Board());
+        //MainMenuWindow mainMenuWindow = new MainMenuWindow();
+        //launch();
+
+
+
+        GameEngine gameEngine = new GameEngine();
+        gameEngine.run();
+
+        //MainMenuWindow mainMenuWindow = new MainMenuWindow();
 
     }
 }

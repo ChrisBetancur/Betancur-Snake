@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c06e59c3-a6b8-4405-a43c-1f8ebfb85242" name="Default Changelist" comment="Update 2&#10;&#10;-Completion of the Board.class with all of the necessary properties and methods&#10;&#10;-Next steps will be to properly comment what we&#10; have as well as work on the movement of the snake">
+    <list default="true" id="c06e59c3-a6b8-4405-a43c-1f8ebfb85242" name="Default Changelist" comment="Update 3&#10;&#10;-Basic GUI done on the snake game&#10;&#10;-Next steps add the rest of the snake game features">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Engine/GameEngine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GameUtil/Time.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UserInterface/MainMenuWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SnakeGame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SnakeGame.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SnakeGame/Properties/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SnakeGame/Properties/Board.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SnakeGame/Properties/Snake.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SnakeGame/Properties/Snake.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SnakeGame/Properties/Tile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SnakeGame/Properties/Tile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Engine/BoardPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserInterface/PrimaryWindow/BoardPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Engine/TilePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserInterface/PrimaryWindow/TilePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Engine/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserInterface/PrimaryWindow/GameWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GameUtil/Movement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameUtil/Movement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Properties/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Properties/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Properties/Snake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Properties/Snake.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Properties/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Properties/Tile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +30,7 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="module-info" />
       </list>
     </option>
   </component>
@@ -29,13 +46,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ChessGame" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="android.project.structure" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="GameUtil" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="SnakeGame" />
@@ -43,9 +65,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainMenuWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UserInterface.MainMenuWindow" />
+      <module name="SnakeGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UserInterface.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.MainMenuWindow" />
       </list>
     </recent_temporary>
   </component>
@@ -107,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615851541126</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Update 3&#10;&#10;-Basic GUI done on the snake game&#10;&#10;-Next steps add the rest of the snake game features">
+      <created>1615851677615</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1615851677615</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,10 +170,14 @@
     <MESSAGE value="Multi-Dimensional Arrays" />
     <MESSAGE value="Update 1" />
     <MESSAGE value="Update 2&#10;&#10;-Completion of the Board.class with all of the necessary properties and methods&#10;&#10;-Next steps will be to properly comment what we&#10; have as well as work on the movement of the snake" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 2&#10;&#10;-Completion of the Board.class with all of the necessary properties and methods&#10;&#10;-Next steps will be to properly comment what we&#10; have as well as work on the movement of the snake" />
+    <MESSAGE value="Update 3&#10;&#10;-Basic GUI done on the snake game&#10;&#10;-Next steps add the rest of the snake game features" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 3&#10;&#10;-Basic GUI done on the snake game&#10;&#10;-Next steps add the rest of the snake game features" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SnakeGame$Main.ic" NAME="Main Coverage Results" MODIFIED="1616291910426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

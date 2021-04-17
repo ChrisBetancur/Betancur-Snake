@@ -40,8 +40,8 @@ public class Snake {
         this.currentTiles = currentTiles;
         head=currentTiles.getFirst();
         tail=currentTiles.getLast();
-        System.out.println(head.getRow());
     }
+
 
     public int getSpeed() {
         return speed;
@@ -66,4 +66,6 @@ public class Snake {
     public void setTail(Tile tail) {
         this.tail = tail;
     }
+
+
 }
