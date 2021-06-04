@@ -15,7 +15,7 @@ public class GameEngine {
     private final String highScoreLocation = "C:/Users/chris/OneDrive/Desktop/SnakeGame Database/HighScore.txt";
 
     {
-        SNAKE_SPEED_MILLISECONDS = 400;
+        SNAKE_SPEED_MILLISECONDS = 100;
     }
 
     private boolean gameEnd;

@@ -23,8 +23,8 @@ public class Board {
     private int foodRow;
     private int foodCol;
 
-    private final int BOARD_ROWS=20;
-    private final int BOARD_COLUMNS=20;
+    private final int BOARD_ROWS=50;
+    private final int BOARD_COLUMNS=50;
     private final int NUM_OF_TILES=BOARD_ROWS*BOARD_COLUMNS;
 
     private final int DEFAULT_SNAKE_COLUMNS = BOARD_COLUMNS/2 - 1;
